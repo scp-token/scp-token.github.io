@@ -1,4 +1,5 @@
 # SCP - 代币
+###### [English](./README.md) | [简体中文](./README.zh.md) | [日本語](./README.ja.md)
 *一个基于社区、受小说启发的实验性数字资产*
 
 ---
@@ -9,7 +10,7 @@ SCP Token 是一个**独立的、由粉丝创建的实验性数字资产**，灵
 
 本项目：
 
-* **不**隶属于 :contentReference[oaicite:4]{index=4}
+* **不**隶属于 [SCP基金会](https://scp-wiki-cn.wikidot.com)
 * **未**得到任何官方 SCP 实体背书
 * **不**声称拥有 SCP 知识产权
 * 完全是一个**社区驱动的虚构衍生创作**
@@ -41,13 +42,13 @@ SCP Token（符号：SCP）是作为技术与社区实验创建的标准区块�
 | ---------------- | ----------------------------------------- |
 | 代币名称         | SCP                                       |
 | 符号             | SCP                                       |
-| 网络             | :contentReference[oaicite:5]{index=5} |
+| 网络             | Binance Smart Chain (BSC)                    |
 | 合约地址         | [`0xF5Eb06fC3bA672Ed5E9eB4Ed444C68A4DC173096`](https://bscscan.com/address/0xf5eb06fc3ba672ed5e9eb4ed444c68a4dc173096) |
 | 总供应量         | 17,309,600 SCP                            |
 | 小数位           | 18                                        |
 | 代币标准         | 标准 BEP-20 兼容代币                      |
 
-所有链上数据（如转账、持有者、供应量）均可通过区块链浏览器公开验证（例如 :contentReference[oaicite:6]{index=6}）。
+所有链上数据（如转账、持有者、供应量）均可通过区块链浏览器公开验证。
 
 ---
 
