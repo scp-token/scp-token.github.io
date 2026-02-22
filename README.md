@@ -1,4 +1,5 @@
 # SCP - Token
+###### [English](./README.md) | [简体中文](./README.zh.md) | [日本語](./README.ja.md)
 *A Community Fiction-Inspired Experimental Digital Asset*
 
 ---
