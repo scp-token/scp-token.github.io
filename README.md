@@ -1,90 +1,186 @@
-# SCP - Token - One-page Project Overview
-
-**Contract:** `0xF5Eb06fC3bA672Ed5E9eB4Ed444C68A4DC173096`  
-**Chain:** 0 (BNB Smart Chain / BSC)  
-**Token standard:** Standard BEP-20 (fixed supply)  
-**Total supply:** **17,309,600** SCP  
-**Decimals:** 18
+# SCP - Token
+*A Community Fiction-Inspired Experimental Digital Asset*
 
 ---
 
-## 1. Project summary
-SCP is a fan-inspired BEP-20 token created by an independent developer community. The token is inspired by the SCP universe as a creative theme and is **not affiliated with or endorsed by** the 1. Portions of source inspiration from the SCP Wiki are licensed under **Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)** — see the Licensing section below.
+## ⚠️ Important Disclaimer
 
-This project focuses on community building, transparent tokenomics, and honest, long-term development rather than speculative manipulation.
+SCP Token is an **independent, fan-created experimental digital asset** inspired by the fictional SCP universe.
 
----
+This project:
 
-## 2. Quick facts (on-chain)
-- **Contract verified on:** 2 (verified source code)  
-- **Token type:** Standard token (no transfer tax, no auto-reflection)  
-- **Owner / Admin:** (currently controlled by project deployer; recommended to transfer to multisig)  
-- **Recommended multisig:** 3 (we will transfer ownership post creation)  
+* Is **NOT affiliated with the SCP Foundation**
+* Is **NOT endorsed by any official SCP entity**
+* Does **NOT claim ownership of SCP intellectual property**
+* Is purely a **community-driven fictional derivative creation**
 
----
+The SCP universe is licensed under **Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)**.
+This project follows the same license.
 
-## 3. Tokenomics (initial proposal)
-Total supply: **17,309,600 SCP**
-
-| Allocation | % | Amount (SCP) | Notes |
-|---|---:|---:|---|
-| Initial Liquidity (PancakeSwap) | 40% | 6,923,840 | Strongly recommend LP lock |
-| Community / Rewards / Airdrop | 20% | 3,461,920 | Farming, early supporters |
-| Treasury / Ecosystem (incl. private sale) | 15% | 2,596,440 | Marketing, partnerships, reserve |
-| Team (vested) | 10% | 1,730,960 | 24-month linear vesting, 6-month cliff |
-| Marketing / Partnerships | 10% | 1,730,960 | Campaigns, KOLs, bounties |
-| Advisors / Bounties | 5% | 865,480 | Short-term incentives |
-
-**Notes:** a portion (e.g. 5% = 865,480) from Treasury can be used for a private sale / seed round to raise initial project funds (with KYC/agreements).
+License reference: [https://creativecommons.org/licenses/by-sa/3.0/](https://creativecommons.org/licenses/by-sa/3.0/)
 
 ---
 
-## 4. Roadmap (high level)
-- **Phase 0 — Launch & Verify (done):** Contract deployed and verified on 4.  
-- **Phase 1 — Liquidity & Safety (weeks 1–2):** Add SCP/BNB liquidity on 5, transfer ownership to multisig (6), lock LP via reputable lock service.  
-- **Phase 2 — Community & Listings (month 1–3):** Launch Telegram/Discord, publish one-pager & GitHub code, submit to CoinGecko / CoinMarketCap, apply for token lists.  
-- **Phase 3 — Incentives & Utility (month 3–6):** Community rewards, staking/pools, strategic partnerships.  
-- **Phase 4 — Ongoing:** Roadmap updates, audits if budget allows, explore cross-chain options.
+## 1. Project Overview
+
+SCP Token (symbol: SCP) is a standard blockchain token created as a technical and community experiment.
+
+The purpose of the project is to:
+
+* Explore decentralized token deployment
+* Practice open-source smart contract development
+* Experiment with community-driven fictional digital assets
+* Learn blockchain infrastructure deployment and verification
+
+This project does **not** represent investment advice, financial instruments, or securities. It is an experimental token with no intrinsic value or guaranteed utility.
 
 ---
 
-## 5. Security & best practices
-- **Contract:** Verified source code on 7.  
-- **Ownership:** Project will transfer owner to a multisig (8) and publicly announce the multisig address.  
-- **LP Lock:** All initial LP tokens will be locked using a reputable lock service (e.g. Team.Finance / Unicrypt) and a lock proof link will be published.  
-- **Audits:** A formal third-party audit is recommended prior to larger listings; at minimum, a community/code review will be published.  
-- **Transparency:** Monthly treasury and expense reports will be published (on request or via GitHub).
+## 2. Token Information
+
+| Item             | Details                                      |
+| ---------------- | -------------------------------------------- |
+| Token Name       | SCP                                          |
+| Symbol           | SCP                                          |
+| Network          | Binance Smart Chain (BSC)                    |
+| Contract Address | [`0xF5Eb06fC3bA672Ed5E9eB4Ed444C68A4DC173096`](https://bscscan.com/address/0xf5eb06fc3ba672ed5e9eb4ed444c68a4dc173096) |
+| Total Supply     | 17,309,600 SCP                               |
+| Decimals         | 18                                           |
+| Token Standard   | Standard BEP-20 Compatible Token             |
+
+All on-chain data such as transfers, holders, and supply are publicly verifiable via blockchain explorers.
 
 ---
 
-## 6. How to buy / add token to wallet
-1. Add token to MetaMask / Trust Wallet using contract address above, decimals = 18.  
-2. Swap on 9 using SCP/BNB pair once liquidity is provided.  
-3. Recommended slippage: 0.5%–2% (for standard token). If you experience failed transactions, increase slippage slightly.
+## 3. Design Philosophy
+
+SCP Token is structured around three guiding principles:
+
+### 1. Transparency
+
+All token information is publicly accessible on-chain.
+
+### 2. Simplicity
+
+No complex mechanisms, no hidden minting logic, no dynamic supply models.
+
+### 3. Educational Purpose
+
+This project serves as a learning milestone in smart contract deployment, token standard implementation, and decentralized publishing.
 
 ---
 
-## 7. Licensing & copyright (important)
-This project is **fan-inspired** and **not** an official SCP Foundation product. Portions of the SCP Wiki are published under **Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)**. Where SCP wiki content is referenced, we will comply with CC BY-SA requirements:
+## 4. Intended Use
 
-- Provide clear attribution to SCP Wiki where applicable.  
-- Release derivative creative content under CC BY-SA 3.0 where required.  
-- **We explicitly do not use or republish copyrighted imagery** (for example, the original SCP-173 photograph) unless we have explicit permission from the rights holder.
+SCP Token currently has no mandatory utility. Possible community-driven directions may include:
 
----
+* Digital collectibles
+* Community tipping token
+* Fictional lore participation rewards
+* Experimental governance simulation
+* Developer learning demonstrations
 
-## 8. Legal & risk disclaimer
-- **Not investment advice.** The information provided here is for informational purposes only and is not a solicitation to buy or sell tokens.  
-- Tokens may be subject to securities laws in certain jurisdictions. If tokens are offered/sold to the public, legal counsel is recommended.  
-- The project team (single or multiple people) commits to transparency; however, crypto carries risk. Invest only what you can afford to lose.
+Future developments depend entirely on voluntary community contribution.
 
 ---
 
-## 9. Team & contacts
-**Lead developer & contact:** `iksyer` — software developer & blockchain enthusiast (project maintainer).  
-**Official website:** https://scp.ccoz.cc/  
-**Official email:** `scp@ccoz.cc`  
-**GitHub:** `https://github.com/scp-token`  
-**Community:** (Telegram/Discord links to be added; recommended: create and publish a Telegram community link and add it here.)
+## 5. Legal and Risk Statement
 
-*Public profiles (GitHub, LinkedIn, Twitter) will be linked as
+By interacting with SCP Token, you acknowledge:
+
+* This token is a fictional, experimental digital asset.
+* It carries **no promise of profit, return, or financial value**.
+* It is not an investment vehicle.
+* It may become illiquid, unused, or discontinued at any time.
+* The creator assumes no liability for losses.
+
+Users are responsible for understanding blockchain risks including volatility, smart contract risks, and regulatory uncertainties.
+
+---
+
+## 6. Intellectual Property Notice
+
+SCP Token is inspired by the SCP fictional universe.
+
+The SCP universe operates under the **CC BY-SA 3.0 license**, which allows derivative works provided:
+
+* Attribution is given
+* Derivatives remain under the same license
+
+This project complies with that requirement and is released under:
+
+**Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)**
+
+---
+
+## 7. Development Background
+
+SCP Token was created as an independent student-led technical experiment in blockchain development and decentralized publishing.
+
+The developer is a university student with programming experience and interest in:
+
+* Smart contract architecture
+* Open-source ecosystems
+* Distributed systems
+* Creative digital economies
+
+This project represents a learning milestone rather than a commercial product.
+
+---
+
+## 8. Roadmap (Experimental)
+
+Phase 1
+
+* Token deployment
+* Contract verification
+* Public documentation
+
+Phase 2
+
+* Community channel setup
+* GitHub documentation refinement
+* Educational articles about token structure
+
+Phase 3
+
+* Optional community governance experiment
+* Open-source contribution invitation
+
+---
+
+## 9. Open Source Commitment
+
+The project encourages transparency and community discussion.
+
+Future improvements may include:
+
+* Contract audit documentation
+* Code comments refinement
+* Educational blog posts
+* Contributor guidelines
+
+---
+
+## 10. Official Channels
+
+| Resource      | Link                                                         |
+| ------------- | ------------------------------------------------------------ |
+| Website       | [https://scp.ccoz.cc](https://scp.ccoz.cc)                   |
+| GitHub        | [https://github.com/scp-token](https://github.com/scp-token) |
+| Telegram      | [https://t.me/token_scp](https://t.me/token_scp)             |
+| Contact Email | [scp@ccoz.cc](mailto:scp@ccoz.cc)                            |
+
+Only information published through the above channels should be considered official.
+
+---
+
+## Final Note
+
+SCP Token is an experimental, fictional, community-inspired digital asset created for learning and exploration.
+
+It is not official.
+It is not financial advice.
+It is not affiliated with any SCP authority.
+
+It is simply a small technical experiment built on open blockchain infrastructure.
