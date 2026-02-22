@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SCP Token — Language Switcher</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Arial; margin: 1.2rem; max-width: 980px; }
+    .langbar { margin-bottom: 1rem; }
+    .langbtn { margin-right: 0.4rem; padding: .3rem .6rem; border-radius: 6px; border: 1px solid #ddd; background: #f7f7f7; cursor: pointer; }
+    .langbtn.active { font-weight: 700; background: #e8f0ff; }
+    #content { margin-top: .6rem; }
+  </style>
+</head>
+<body>
+  <div class="langbar">
+    <button class="langbtn" data-lang="en">English</button>
+    <button class="langbtn" data-lang="zh">简体中文</button>
+    <button class="langbtn" data-lang="ja">日本語</button>
+    <span style="margin-left:1rem;color:#666">切换语言 / 言語を切り替える</span>
+  </div>
+
+  <div id="content">加载中…</div>
+
+  <!-- 使用 CDN 的 marked.js 渲染 Markdown（可替换成本地文件） -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // 可映射的 markdown 文件名
+    const map = { en: 'README.md', zh: 'README.zh.md', ja: 'README.ja.md' };
+
+    // 读取 URL ?lang=
+    function getParamLang() {
+      const params = new URLSearchParams(location.search);
+      const l = params.get('lang');
+      if (l && ['en','zh','ja'].includes(l)) return l;
+      return null;
+    }
+
+    function pickLang() {
+      const param = getParamLang();
+      if (param) return param;
+      // 浏览器语言检测
+      const nav = navigator.language || navigator.userLanguage || 'en';
+      if (nav.startsWith('zh')) return 'zh';
+      if (nav.startsWith('ja')) return 'ja';
+      return 'en';
+    }
+
+    function setActiveButton(lang) {
+      document.querySelectorAll('.langbtn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
+    }
+
+    async function loadMarkdown(lang) {
+      const file = map[lang] || map.en;
+      try {
+        const res = await fetch(file);
+        if (!res.ok) throw new Error('无法加载 ' + file);
+        const md = await res.text();
+        // 渲染 Markdown -> HTML
+        document.getElementById('content').innerHTML = marked.parse(md);
+      } catch (e) {
+        document.getElementById('content').textContent = '加载失败：' + e.message;
+      }
+    }
+
+    // 初始化
+    const lang = pickLang();
+    setActiveButton(lang);
+    loadMarkdown(lang);
+
+    // 按钮切换
+    document.querySelectorAll('.langbtn').forEach(b => {
+      b.addEventListener('click', () => {
+        const l = b.dataset.lang;
+        setActiveButton(l);
+        // 更新 URL（保留 history）
+        const url = new URL(location);
+        url.searchParams.set('lang', l);
+        history.replaceState({}, '', url);
+        loadMarkdown(l);
+      });
+    });
+  </script>
+</body>
+</html>
