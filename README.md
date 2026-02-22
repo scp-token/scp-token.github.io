@@ -10,7 +10,7 @@ SCP Token is an **independent, fan-created experimental digital asset** inspired
 
 This project:
 
-* Is **NOT affiliated with the SCP Foundation**
+* Is **NOT affiliated with the [SCP Foundation](https://scp-wiki.wikidot.com/)**
 * Is **NOT endorsed by any official SCP entity**
 * Does **NOT claim ownership of SCP intellectual property**
 * Is purely a **community-driven fictional derivative creation**
